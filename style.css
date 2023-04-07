@@ -9,8 +9,8 @@ body {
 .calculator {
     display: flex;
     justify-content: center;
-    margin-top: 45px;
-    font-family: 'Poppins', sans-serif;
+    margin-top: 30px;
+    font-family: "Poppins", sans-serif;
 }
 
 .calc-container {
@@ -42,6 +42,7 @@ body {
     background-color: #f5f5f5;
     padding: 10px;
     height: auto;
+    max-height: 75px;
     text-align: end;
     word-wrap: break-word;
 }
@@ -114,7 +115,7 @@ body {
     height: min-content;
     max-height: 400px;
     background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     border-radius: 4px;
     overflow: auto;
     word-wrap: break-word;
