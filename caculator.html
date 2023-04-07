@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator - SRK</title>
+        <!-- Fontawesome Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./calculator.css" />
+    </head>
+
+    <body>
+        <div class="calculator">
+            <div class="calc-container" id="calc-container">
+                <div class="head">
+                    <span>Calculator</span>
+                    <span class="history-btn" id="historyBtn">
+                        <i class="fa fa-history"></i>
+                    </span>
+                </div>
+                <div class="display-container">
+                    <div class="input-display" id="inputDisplay"></div>
+                    <div class="result-display" id="resultDisplay">0</div>
+                </div>
+                <div class="btns">
+                    <button class="clearBtn" id="allClearBtn">AC</button>
+                    <button class="clearBtn" id="deleteBtn"><i class="fa fa-delete-left"></i></button>
+                    <button class="btn-operator" data-operator>%</button>
+                    <button class="btn-operator" data-operator>/</button>
+                    <button class="btn-number" data-number>7</button>
+                    <button class="btn-number" data-number>8</button>
+                    <button class="btn-number" data-number>9</button>
+                    <button class="btn-operator" data-operator>*</button>
+                    <button class="btn-number" data-number>4</button>
+                    <button class="btn-number" data-number>5</button>
+                    <button class="btn-number" data-number>6</button>
+                    <button class="btn-operator" data-operator>-</button>
+                    <button class="btn-number" data-number>1</button>
+                    <button class="btn-number" data-number>2</button>
+                    <button class="btn-number" data-number>3</button>
+                    <button class="btn-operator" data-operator>+</button>
+                    <button class="btn-number" data-number>0</button>
+                    <button class="btn-number" data-number>.</button>
+                    <button class="btn-equal" id="equalOperator">=</button>
+                </div>
+            </div>
+        </div>
+        <div class="history">
+            <div class="history-body">
+                <div class="history-head">
+                    <span class="history-title">History</span>
+                    <span class="close-btn">&times;</span>
+                </div>
+                <div class="history-content"></div>
+                <div class="clear-history" id="clearHistory">
+                    <button class="p-2">Clear History</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="./calculator.js"></script>
+    </body>
+</html>
