@@ -96,6 +96,15 @@ body {
     border: 2px solid #ffffff;
     font-size: 30px;
 }
+@keyframes open-history {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1px);
+    }
+}
 
 .history {
     display: none;
@@ -169,4 +178,9 @@ body {
     border: none;
     border-radius: 5px;
     padding: 10px;
+    cursor: pointer;
+}
+
+.clear-history button:hover {
+    background-color: #8a0200;
 }
